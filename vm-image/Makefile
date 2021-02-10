@@ -1,6 +1,6 @@
 
 image-create:
-	qemu-img create -f raw vm-flepa-debian-amd64.raw 4G
+	qemu-img create -f raw vm-flepa-debian-amd64.raw 3G
 	qemu-img info vm-flepa-debian-amd64.raw
 
 image-debian-install:
