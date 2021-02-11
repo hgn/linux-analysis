@@ -1,12 +1,14 @@
 #!/bin/bash
 
+BASEPATH=$(dirname -- "$(readlink -f -- "$BASH_SOURCE")")
+
 if [[ $EUID -ne 0 ]]; then
    echo "This script must be run as root"
    exit 1
 fi
 
-cp sudoers /etc/sudoers
-cp sources.list /etc/apt/sources.list
+cp ${BASEPATH}/sudoers /etc/sudoers
+cp ${BASEPATH}/sources.list /etc/apt/sources.list
 apt-get --yes update
 apt-get --yes upgrade
 apt-get --yes install aptitude mcedit build-essential vim-nox nano zsh bash
