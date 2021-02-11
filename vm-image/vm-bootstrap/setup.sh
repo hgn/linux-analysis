@@ -21,6 +21,6 @@ su -c " \
 cd /home/john; \
 mkdir src; \
 cd src; \ 
-git clone --depth 1  https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git; \ 
-git clone --depth 1  https://github.com/hgn/flepa-examples.git; \
+git clone https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git; \ 
+git clone --depth 1 https://github.com/hgn/flepa-examples.git; \
 " john
