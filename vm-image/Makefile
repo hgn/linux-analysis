@@ -1,6 +1,6 @@
 
 image-create:
-	qemu-img create -f raw vm-flepa-debian-amd64.raw 3G
+	qemu-img create -f raw vm-flepa-debian-amd64.raw 10G
 	qemu-img info vm-flepa-debian-amd64.raw
 
 image-debian-install:
@@ -10,4 +10,4 @@ image-debian-install:
 	rm -f debian-testing-amd64-netinst.iso
 
 launch:
-	qemu-system-x86_64 -drive file=file,index=0,media=disk,format=raw,file=vm-flepa-debian-amd64.raw -vga virtio -boot d -m 4096
+	qemu-system-x86_64 -M pc -cpu max -smp cores=2,threads=1,sockets=1 -drive file=file,index=0,media=disk,format=raw,file=vm-flepa-debian-amd64.raw -vga virtio -boot d -m 8192

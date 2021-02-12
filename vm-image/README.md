@@ -29,5 +29,7 @@ root:root
 - reboot and cancel second install screen
 - make launch
 - login as root root
-- cd /tmp
 - apt-get --yes install git
+- cd /tmp
+- git clone https://github.com/hgn/flepa-examples.git
+- execute ./flepa-examples/vm-image/vm-bootstrap/setup.sh
