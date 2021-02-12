@@ -10,4 +10,4 @@ image-debian-install:
 	rm -f debian-testing-amd64-netinst.iso
 
 launch:
-	qemu-system-x86_64 -M pc -cpu max -smp cores=2,threads=1,sockets=1 -drive file=file,index=0,media=disk,format=raw,file=vm-flepa-debian-amd64.raw -vga virtio -boot d -m 8192
+	qemu-system-x86_64 -enable-kvm -M pc -cpu max -smp cores=2,threads=1,sockets=1 -drive file=file,index=0,media=disk,format=raw,file=vm-flepa-debian-amd64.raw -vga virtio -boot d -m 8192

@@ -1,16 +1,7 @@
-function nonzero_return() {
-	RETVAL=$?
-	[ $RETVAL -ne 0 ] && echo "$RETVAL"
-}
+ulimit -c unlimited
 
-if [ -f /etc/bashrc ]; then
-        . /etc/bashrc
-fi
-
-
-export PS1="\\$\`nonzero_return\` "
-
-export PATH=/sbin:/usr/sbin/:$PATH
+export PS1="\\w \\$ "
+export PATH=/usr/local/bin:/sbin:/usr/sbin/:$PATH
 
 # append to the history file, don't overwrite it
 shopt -s histappend
