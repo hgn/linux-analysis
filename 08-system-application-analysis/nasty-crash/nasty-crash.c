@@ -1,51 +1,45 @@
-#include <inttypes.h>
-#include <signal.h>
-#include <sys/types.h>
-#include <unistd.h>
+#include <stdlib.h>
+#include <time.h>
 
+#define CRASH_NESTING_LVL 20
 
-static uint64_t pad;
+static unsigned int nesting;
 
-#define BUSY_LOOP(x) \
-do { \
-	uint64_t i = x; \
-	while (i--) { \
-		pad ^= i; \
-	}\
-} while (0)
+#define always_inline inline __attribute__((always_inline))
 
-#define	LOOP_VAL_50 100000000
-#define	LOOP_VAL_25 ((unsigned)(LOOP_VAL_50 / 2))
+static void left_path(void);
+static void right_path(void);
 
-static void function_alpha_50()
+static __always_inline void crasher(void)
 {
-	BUSY_LOOP(LOOP_VAL_50);
+	if (nesting++ > CRASH_NESTING_LVL)
+		nesting /= 0;
 }
 
-
-static void function_gamma_25_a(void)
+static __always_inline void pick_path(void)
 {
-	BUSY_LOOP(LOOP_VAL_25);
+	int value = rand() % 2;
+	if (value)
+		left_path();
+	else
+		right_path();
 }
 
-static void function_gamma_25_b(void)
+static void left_path(void)
 {
-	BUSY_LOOP(LOOP_VAL_25);
-	pad /= 0;
+	crasher();
+	pick_path();
 }
 
-static void function_beta_50()
-{
-	function_gamma_25_a();
-	function_gamma_25_b();
+static void right_path(void)
+{ 
+	crasher();
+	pick_path();
 }
 
 
 int main(void)
 {
-	unsigned iterations = 10;
-	while (iterations--) {
-		function_alpha_50();
-		function_beta_50();
-	}
+	srand(time(NULL));
+	pick_path();
 }
