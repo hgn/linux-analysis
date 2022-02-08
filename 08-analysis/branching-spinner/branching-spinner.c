@@ -31,7 +31,6 @@ static void function_gamma_25_a(void)
 static void function_gamma_25_b(void)
 {
 	BUSY_LOOP(LOOP_VAL_25);
-	pad /= 0;
 }
 
 static void function_beta_50()
