@@ -3,6 +3,8 @@
 CFLAGS := -g
 CFLAGS_FAST := -DNO_DEBUG -O6 -malign-double -funroll-all-loops
 
+all: random-branch
+
 clean:
 	rm -rf random-branch random-branch.o
 	rm -rf *.svg

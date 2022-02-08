@@ -29,10 +29,11 @@ rm -rf /var/cache/apt/archives/*
 # we are root, now do with do unpriv operations
 su -c " \
 cd /home/john; \
+git clone --depth 1 https://github.com/hgn/flepa-examples.git; \
 mkdir src; \
 cd src; \ 
 git clone --depth 1 https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git; \ 
-git clone --depth 1 https://github.com/hgn/flepa-examples.git; \
+git clone --depth 1 https://github.com/radareorg/radare2.git; \
 " john
 
 cp ${BASEPATH}/bashrc /home/john/.bashrc

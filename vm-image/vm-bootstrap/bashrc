@@ -1,5 +1,7 @@
 ulimit -c unlimited
 
+export DEBUGINFOD_URLS="https://debuginfod.debian.net"
+
 export PS1="\\w \\$ "
 export PATH=/usr/local/bin:/sbin:/usr/sbin/:$PATH
 
