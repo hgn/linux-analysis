@@ -10,13 +10,13 @@ static unsigned int nesting;
 static void left_path(void);
 static void right_path(void);
 
-static __always_inline void crasher(void)
+static always_inline void crasher(void)
 {
 	if (nesting++ > CRASH_NESTING_LVL)
 		nesting /= 0;
 }
 
-static __always_inline void pick_path(void)
+static always_inline void pick_path(void)
 {
 	int value = rand() % 2;
 	if (value)
