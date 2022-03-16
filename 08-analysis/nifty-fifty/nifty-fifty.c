@@ -1,11 +1,14 @@
 #include <stdio.h>
 #include <inttypes.h>
 #include <time.h>
+#include <sys/types.h>
+#include <unistd.h>
+
 
 #define	NSEC_PER_SEC 1000000000ULL
 #define MIN(x, y) (((x) < (y)) ? (x) : (y))
 
-static uint64_t gettime_overhead;
+static uint64_t calculated_overhead;
 
 #define LOOPS 50
 #define SLEEPTIME_NS 50000000ULL
@@ -22,11 +25,11 @@ static uint64_t get_nsecs(void)
 
 static void burn_nsecs(uint64_t nsecs)
 {
-	uint64_t T0 = get_nsecs(), T1;
+	uint64_t t0 = get_nsecs(), t1;
 
 	do {
-		T1 = get_nsecs();
-	} while (T1 + gettime_overhead < T0 + nsecs);
+		t1 = get_nsecs();
+	} while (t1 + calculated_overhead < t0 + nsecs);
 }
 
 static void sleep_nsecs(uint64_t nsecs)
@@ -39,19 +42,19 @@ static void sleep_nsecs(uint64_t nsecs)
 	nanosleep(&ts, NULL);
 }
 
-static void calibrate(void)
+static void calibrate_overhead(void)
 {
-	uint64_t T0, T1, delta, min_delta = NSEC_PER_SEC;
+	uint64_t t0, t1, delta, min_delta = NSEC_PER_SEC;
 	int i;
 
 	for (i = 0; i < 10; i++) {
-		T0 = get_nsecs();
+		t0 = get_nsecs();
 		burn_nsecs(0);
-		T1 = get_nsecs();
-		delta = T1-T0;
+		t1 = get_nsecs();
+		delta = t1 - t0;
 		min_delta = MIN(min_delta, delta);
 	}
-	gettime_overhead = min_delta;
+	calculated_overhead = min_delta;
 
 	printf("run measurement overhead: %" PRIu64 " nsecs\n", min_delta);
 }
@@ -60,7 +63,8 @@ int main(void)
 {
 	unsigned iterations = 50;
 
-	calibrate();
+	calibrate_overhead();
+	printf("pid: %ld\n", (long) getpid());
 
 	while (iterations--) {
 		burn_nsecs(BURNTIME_NS);
