@@ -1,7 +1,7 @@
-# disable optimization, just to make sure the dead code
+# disable optimization, just t o make sure the dead code
 # is not elliminated, furthermore we need debugging symbols
 # later for perf analysis
-CFLAGS  = -g -O0 -Wno-div-by-zero
+CFLAGS  = -g -fno-omit-frame-pointer -O0 -Wno-div-by-zero
 
 branching-spinner: branching-spinner.c
 	$(CC) -Wa,-ahl=branching-spinner.s $(CFLAGS) $< -o $@
