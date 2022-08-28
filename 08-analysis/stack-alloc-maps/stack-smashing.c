@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <unistd.h>
 
-#define SMASH_INCREMENT 256
+#define SMASH_INCREMENT 128
 #define PEAK_WORK (1024 * 1024)
 
 static int cnt = 0;
@@ -23,12 +24,7 @@ int main(void)
 {
 	size_t i = 8;
 
-	do {
+	for (i = 0; i <= PEAK_WORK; i += SMASH_INCREMENT)
 		smash(i);
-		i += SMASH_INCREMENT; 
-		if (i >= PEAK_WORK)
-			break;
-	} while (42);
-
 }
 

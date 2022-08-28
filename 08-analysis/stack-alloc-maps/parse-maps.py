@@ -1,7 +1,8 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import sys
 import re
+import os
 
 pid = int(sys.argv[1])
 stack_alloc_size = int(sys.argv[2])
@@ -17,7 +18,6 @@ MAPS_LINE_RE = re.compile(r"""
     (\[stack\].*)\s+                                   # Pathname
 """, re.VERBOSE)
 
-
 with open("/proc/%d/maps" % pid) as fd:
     for line in fd:
         m = MAPS_LINE_RE.match(line)
@@ -26,3 +26,5 @@ with open("/proc/%d/maps" % pid) as fd:
         addr_start, addr_end, perms, offset, dev, inode, pathname = m.groups()
         stack_size = int(addr_end, 16) - int(addr_start, 16)
         print("{},{},{}".format(counter, stack_alloc_size, stack_size))
+        break
+
