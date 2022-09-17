@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="stack-over-time.svg">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="TriangleOutM"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1209"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.4)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutM-1"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1209-2"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="scale(0.4)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutM-1-9"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1209-2-4"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="scale(0.4)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutM-7"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1209-8"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="scale(0.4)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="694.68261"
+     inkscape:cy="666.46321"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1918"
+     inkscape:window-height="1013"
+     inkscape:window-x="0"
+     inkscape:window-y="33"
+     inkscape:window-maximized="1"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid853" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:#845ef7;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000007, 0.90000007000000004;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       id="rect855-3-6-7-1"
+       width="55.5625"
+       height="39.687504"
+       x="7.9375"
+       y="111.79166"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="35.926708"
+       y="134.58926"
+       id="text859-2-3-4"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203"><tspan
+         sodipodi:role="line"
+         x="35.926708"
+         y="134.58926"
+         style="font-size:7.05555534px;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.26458332px"
+         id="tspan1519">man_on_deimos</tspan></text>
+    <rect
+       style="opacity:1;fill:#339af0;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000003, 0.90000003;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       id="rect855"
+       width="425.97916"
+       height="10.583333"
+       x="-71.4375"
+       y="177.9375"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="135.16798"
+       y="186.31949"
+       id="text859"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203"><tspan
+         sodipodi:role="line"
+         id="tspan857"
+         x="135.16798"
+         y="186.31949"
+         style="font-size:7.05555534px;stroke-width:0.26458332px">main</tspan></text>
+    <rect
+       style="opacity:1;fill:#a61e4d;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000004, 0.90000004;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       id="rect855-3"
+       width="137.58334"
+       height="7.9375"
+       x="-68.791664"
+       y="170"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203" />
+    <rect
+       y="140.89583"
+       x="74.083336"
+       height="37.041672"
+       width="134.9375"
+       id="rect839"
+       style="opacity:1;fill:#e67700;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000004, 0.90000004;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203" />
+    <rect
+       style="opacity:1;fill:#2b8a3e;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000004, 0.90000004;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       id="rect841"
+       width="137.58333"
+       height="18.520828"
+       x="214.3125"
+       y="159.41667"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203" />
+    <rect
+       style="opacity:1;fill:#f06595;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000005, 0.90000005000000005;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       id="rect855-3-6"
+       width="66.145836"
+       height="7.9375"
+       x="-66.145836"
+       y="162.0625"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203" />
+    <rect
+       style="opacity:1;fill:#51cf66;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000006, 0.90000005999999999;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       id="rect855-3-6-7"
+       width="60.854168"
+       height="18.520834"
+       x="5.2916665"
+       y="151.47917"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203" />
+    <rect
+       style="opacity:1;fill:#fcc419;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000007, 0.90000007000000004;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       id="rect855-3-6-7-5"
+       width="42.333332"
+       height="21.166662"
+       x="76.729164"
+       y="119.72916"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203" />
+    <rect
+       style="opacity:1;fill:#339af0;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000008, 0.90000007999999998;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       id="rect855-3-6-7-5-3"
+       width="37.04166"
+       height="13.229161"
+       x="124.35416"
+       y="127.66666"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203" />
+    <rect
+       style="opacity:1;fill:#ff6b6b;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000009, 0.90000009000000003;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       id="rect855-3-6-7-5-3-5"
+       width="39.6875"
+       height="18.520828"
+       x="166.6875"
+       y="122.375"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203" />
+    <rect
+       style="opacity:1;fill:#845ef7;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000006, 0.90000005999999999;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       id="rect855-3-6-6"
+       width="66.145821"
+       height="29.104156"
+       x="216.95833"
+       y="130.3125"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203" />
+    <rect
+       style="opacity:1;fill:#ff922b;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000007, 0.90000007000000004;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       id="rect855-3-6-7-2"
+       width="60.854168"
+       height="18.520834"
+       x="288.39584"
+       y="140.89583"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-10.085506"
+       y="176.7189"
+       id="text859-2"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203"><tspan
+         sodipodi:role="line"
+         id="tspan857-7"
+         x="-10.085506"
+         y="176.7189"
+         style="font-size:7.05555534px;stroke-width:0.26458332px">mars</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-46.678112"
+       y="168.45586"
+       id="text859-2-0"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-9"
+         x="-46.678112"
+         y="168.45586"
+         style="font-size:7.05555534px;stroke-width:0.26458332px">phobos</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="23.62546"
+       y="164.22252"
+       id="text859-2-3"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-6"
+         x="23.62546"
+         y="164.22252"
+         style="font-size:7.05555534px;stroke-width:0.26458332px">deimos</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="133.0118"
+       y="164.22252"
+       id="text859-2-06"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-2"
+         x="133.0118"
+         y="164.22252"
+         style="font-size:7.05555534px;stroke-width:0.26458332px">jupiter</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="84.857605"
+       y="133.45526"
+       id="text859-2-6"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-1"
+         x="84.857605"
+         y="133.45526"
+         style="font-size:7.05555534px;stroke-width:0.26458332px">europe</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="123.63805"
+       y="137.15941"
+       id="text859-2-8"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-7"
+         x="123.63805"
+         y="137.15941"
+         style="font-size:7.05555534px;stroke-width:0.26458332px">ganymede</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="174.89159"
+       y="134.66476"
+       id="text859-2-9"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-20"
+         x="174.89159"
+         y="134.66476"
+         style="font-size:7.05555534px;stroke-width:0.26458332px">callisto</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="244.13676"
+       y="148.4987"
+       id="text859-2-2"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-3"
+         x="244.13676"
+         y="148.4987"
+         style="font-size:7.05555534px;stroke-width:0.26458332px">titon</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="306.04919"
+       y="153.33678"
+       id="text859-2-7"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-5"
+         x="306.04919"
+         y="153.33678"
+         style="font-size:7.05555534px;stroke-width:0.26458332px">hyperio</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="274.29919"
+       y="172.08441"
+       id="text859-2-92"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-28"
+         x="274.29919"
+         y="172.08441"
+         style="font-size:7.05555534px;stroke-width:0.26458332px">saturn</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="312.62631"
+       y="198.84517"
+       id="text859-2-97"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-36"
+         x="312.62631"
+         y="198.84517"
+         style="font-size:4.93888903px;stroke-width:0.26458332px">execution time [s]</tspan></text>
+    <path
+       style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#TriangleOutM)"
+       d="m 312.20833,201.75 h 42.33333"
+       id="path1062"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-188.64049"
+       y="366.65817"
+       id="text859-2-97-9"
+       transform="rotate(-90)"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-36-3"
+         x="-188.64049"
+         y="366.65817"
+         style="font-size:4.93888903px;stroke-width:0.26458332px">stack usage [byte]</tspan></text>
+    <path
+       style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#TriangleOutM-1)"
+       d="m 370.41667,188.52083 0,-44.97916"
+       id="path1062-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="200.1203"
+       inkscape:export-ydpi="200.1203" />
+    <rect
+       style="opacity:1;fill:#339af0;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000004, 0.90000004;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       id="rect855-4"
+       width="425.97916"
+       height="13.229167"
+       x="-71.437485"
+       y="82.6875"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="132.52222"
+       y="91.598648"
+       id="text859-5"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         id="tspan857-0"
+         x="132.52222"
+         y="91.598648"
+         style="font-size:7.05555534px;stroke-width:0.26458332px">main</tspan></text>
+    <rect
+       style="opacity:1;fill:#a61e4d;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000005, 0.90000005;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       id="rect855-3-3"
+       width="137.58331"
+       height="13.229167"
+       x="-66.145836"
+       y="69.458336"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <rect
+       y="69.458351"
+       x="74.083336"
+       height="13.229152"
+       width="134.93752"
+       id="rect839-6"
+       style="opacity:1;fill:#e67700;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000005, 0.90000005;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <rect
+       style="opacity:1;fill:#2b8a3e;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000005, 0.90000005;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       id="rect841-1"
+       width="137.58331"
+       height="13.229167"
+       x="214.3125"
+       y="69.458336"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <rect
+       style="opacity:1;fill:#f06595;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000006, 0.90000006;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       id="rect855-3-6-0"
+       width="66.145836"
+       height="13.229164"
+       x="-63.5"
+       y="56.229168"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <rect
+       style="opacity:1;fill:#51cf66;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000007, 0.90000007;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       id="rect855-3-6-7-6"
+       width="60.854172"
+       height="13.229169"
+       x="7.9375"
+       y="56.229168"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <rect
+       style="opacity:1;fill:#fcc419;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000008, 0.90000008;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       id="rect855-3-6-7-5-32"
+       width="42.333332"
+       height="13.229169"
+       x="76.729164"
+       y="56.229168"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <rect
+       style="opacity:1;fill:#339af0;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000009, 0.90000009;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       id="rect855-3-6-7-5-3-0"
+       width="37.041664"
+       height="13.229161"
+       x="124.35416"
+       y="56.229172"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <rect
+       style="opacity:1;fill:#ff6b6b;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.9000001, 0.9000001;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       id="rect855-3-6-7-5-3-5-6"
+       width="39.6875"
+       height="13.229169"
+       x="166.6875"
+       y="56.229168"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <rect
+       style="opacity:1;fill:#845ef7;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000007, 0.90000007;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       id="rect855-3-6-6-1"
+       width="66.145821"
+       height="13.229161"
+       x="216.95833"
+       y="56.229168"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <rect
+       style="opacity:1;fill:#ff922b;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000008, 0.90000008;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       id="rect855-3-6-7-2-5"
+       width="60.854168"
+       height="13.229169"
+       x="288.39584"
+       y="56.229168"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-2.6771703"
+       y="78.2939"
+       id="text859-2-5"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-4"
+         x="-2.6771703"
+         y="78.2939"
+         style="font-size:7.05555534px;stroke-width:0.26458332px">mars</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-43.054684"
+       y="65.133286"
+       id="text859-2-0-7"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-9-6"
+         x="-43.054684"
+         y="65.133286"
+         style="font-size:7.05555534px;stroke-width:0.26458332px">phobos</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="26.719723"
+       y="64.604111"
+       id="text859-2-3-5"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-6-6"
+         x="26.719723"
+         y="64.604111"
+         style="font-size:7.05555534px;stroke-width:0.26458332px">deimos</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="130.36604"
+       y="79.026695"
+       id="text859-2-06-9"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-2-3"
+         x="130.36604"
+         y="79.026695"
+         style="font-size:7.05555534px;stroke-width:0.26458332px">jupiter</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="85.306015"
+       y="64.528511"
+       id="text859-2-6-7"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-1-4"
+         x="85.306015"
+         y="64.528511"
+         style="font-size:7.05555534px;stroke-width:0.26458332px">europe</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="124.08646"
+       y="64.528488"
+       id="text859-2-8-5"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-7-2"
+         x="124.08646"
+         y="64.528488"
+         style="font-size:7.05555534px;stroke-width:0.26458332px">ganymede</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="174.28169"
+       y="64.67968"
+       id="text859-2-9-5"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-20-4"
+         x="174.28169"
+         y="64.67968"
+         style="font-size:7.05555534px;stroke-width:0.26458332px">callisto</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="243.52689"
+       y="64.755287"
+       id="text859-2-2-7"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-3-4"
+         x="243.52689"
+         y="64.755287"
+         style="font-size:7.05555534px;stroke-width:0.26458332px">titon</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="305.4393"
+       y="65.360031"
+       id="text859-2-7-4"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-5-3"
+         x="305.4393"
+         y="65.360031"
+         style="font-size:7.05555534px;stroke-width:0.26458332px">hyperio</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="276.41589"
+       y="78.95108"
+       id="text859-2-92-0"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-28-7"
+         x="276.41589"
+         y="78.95108"
+         style="font-size:7.05555534px;stroke-width:0.26458332px">saturn</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="312.62634"
+       y="103.59516"
+       id="text859-2-97-8"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-36-6"
+         x="312.62634"
+         y="103.59516"
+         style="font-size:4.93888903px;stroke-width:0.26458332px">execution time [s]</tspan></text>
+    <path
+       style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#TriangleOutM-7)"
+       d="m 312.20835,106.49999 h 42.33334"
+       id="path1062-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-93.390488"
+       y="366.65817"
+       id="text859-2-97-9-8"
+       transform="rotate(-90)"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         id="tspan857-7-36-3-4"
+         x="-93.390488"
+         y="366.65817"
+         style="font-size:4.93888903px;stroke-width:0.26458332px">stack frames </tspan></text>
+    <path
+       style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#TriangleOutM-1-9)"
+       d="M 370.41669,93.270822 V 48.291661"
+       id="path1062-1-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <rect
+       style="opacity:1;fill:#845ef7;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:0.90000008, 0.90000007999999998;stroke-dashoffset:0;stroke-opacity:0.35643568"
+       id="rect855-3-6-7-6-2"
+       width="55.562496"
+       height="13.229168"
+       x="10.583333"
+       y="43"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <text
+       id="text1542"
+       y="52.039272"
+       x="38.57254"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:125%;font-family:'URW Gothic L';-inkscape-font-specification:'URW Gothic L';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="/tmp/exp.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         id="tspan1540"
+         style="font-size:7.05555534px;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.26458332px"
+         y="52.039272"
+         x="38.57254"
+         sodipodi:role="line">man_on_deimos</tspan></text>
+  </g>
+</svg>
