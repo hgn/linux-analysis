@@ -8,6 +8,8 @@
 
 void *thread_start(void *args)
 {
+	(void) args;
+
 	fprintf(stderr, "Thread - PID: %u, TID: %u\n", getpid(), gettid()); 
 	while (1)
 		;

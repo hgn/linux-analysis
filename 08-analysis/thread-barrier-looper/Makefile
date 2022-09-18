@@ -1,5 +1,5 @@
 OBJ = thread-barrier-looper
-CFLAGS  = -g -fno-omit-frame-pointer -O0
+CFLAGS  = -Wall -Wextra -g -fno-omit-frame-pointer -O0
 
 OBJ_C = $(addsuffix .c,$(OBJ))
 OBJ_S = $(addsuffix .s,$(OBJ))
