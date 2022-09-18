@@ -1,5 +1,5 @@
 OBJ = lopsided-diamond
-CFLAGS  = -ggdb3 -funwind-tables -Wall -Wextra -std=gnu99 -fno-omit-frame-pointer -O0
+CFLAGS  = -Wall -Wextra -ggdb3 -funwind-tables -Wall -Wextra -std=gnu99 -fno-omit-frame-pointer -O0
 
 OBJ_C = $(addsuffix .c,$(OBJ))
 OBJ_S = $(addsuffix .s,$(OBJ))
