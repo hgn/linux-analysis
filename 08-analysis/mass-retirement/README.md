@@ -1,6 +1,17 @@
 # Mass Retirement
 
 
+Skylake Ports:
+
+Port 0	Integer/Vector Arithmetic, Multiplication, Logic, Shift, and String ops FP Add, Multiply, FMA Integer/FP Division and Square Root AES Encryption Branch2
+Port 1	Integer/Vector Arithmetic, Multiplication, Logic, Shift, and Bit Scanning FP Add, Multiply, FMA
+Port 2	Load, AGU
+Port 3	Load, AGU
+Port 4	Store, AGU
+Port 5	Integer/Vector Arithmetic, Logic Vector Permute x87 FP Add, Composite Int, CLMUL
+Port 6	Integer Arithmetic, Logic, Shift Branch
+Port 7	AGU
+
 ```
     104a:	    nopw   0x0(%rax,%rax,1)
     1050:	/-> inc    %r8
