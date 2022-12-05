@@ -14,28 +14,9 @@ import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 
 plt.style.use('grayscale')
-
-DPI = 300
-FIGSIZE_WIDE = (12,5)
-FIGSIZE_RECT = (12,9)
-LINEWIDTH = 5.0
-LINECOLOR = '0.2'
-
-root_dir = os.path.abspath(os.path.dirname(__file__))
-perf_out = os.path.join(tempfile.mkdtemp(), 'perf.out')
 stats_path = 'meta.json'
 
-# record
-# pre-parre
-# visualize
-
-def get_perf_freq_samples(outfile, seconds=20):
-    cmd = f"sudo perf record -o {outfile} -a -e power:cpu_frequency -- sleep {seconds}"
-    subprocess.run(cmd, shell=True, check=True)
-
-def generate_data(outfile):
-    cmd = f"sudo perf script -i {outfile} -s ./perf-script.py"
-    subprocess.run(cmd, shell=True, check=True)
+DPI=300
 
 def load_stats():
     with open(stats_path) as fd:
@@ -86,12 +67,8 @@ def draw_line(ax, df, stats):
     #ax.xaxis.set_ticks_position('none')
 
 
-get_perf_freq_samples(perf_out)
-generate_data(perf_out)
 stats = load_stats()
 pprint.pprint(stats)
-
-#colors = list(colour.Color("black").range_to(colour.Color("white"), len(stats["frequencies"].keys())))
 
 plt.rcParams.update({'font.size': 5})
 fig, axs = plt.subplots(nrows=len(stats["data"]), sharex=True)
@@ -103,19 +80,6 @@ for index, (k, v) in enumerate(stats["data"].items()):
 plt.subplots_adjust(hspace=.0)
 fig.tight_layout(pad=0)
 plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=None, hspace=.2)
-fig.savefig(sys.argv[1], dpi=DPI, bbox_inches='tight')
-print(f"save file as {sys.argv[1]}")
-exit(0)
-
-
-
-
-
-
-
-
-
-
-
-
-
+image_filename = sys.argv[1] if len(sys.argv) > 1 else "analyze-frequency.pdf"
+fig.savefig(image_filename, dpi=DPI, bbox_inches='tight')
+print(f"save file as {image_filename}")
