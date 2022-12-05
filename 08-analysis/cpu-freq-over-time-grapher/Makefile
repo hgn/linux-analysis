@@ -4,6 +4,8 @@ COLLECTORS := $(wildcard 00-*.py)
 PREPARERS := $(wildcard 10-*.py)
 ANALYZERS := $(wildcard 20-*.py)
 
+OUTPUT = "analyze-frequency.pdf"
+
 # defaults to analyze, just that recorded data
 # are not simple overwriten
 all: help
@@ -16,6 +18,9 @@ prepare:
 
 analyze:
 	./$(ANALYZERS)
+
+show:
+	xpdf -fullscreen $(OUTPUT)
 
 clean:
 	@rm -rf perf.data perf.data.old

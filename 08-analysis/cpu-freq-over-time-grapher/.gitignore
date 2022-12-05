@@ -1,3 +1,6 @@
 *.json
 *.csv
 *.pdf
+*.swp
+perf.data
+perf.data.old
