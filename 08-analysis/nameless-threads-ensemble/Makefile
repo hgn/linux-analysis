@@ -1,10 +1,9 @@
-OBJ=nameless-threads-ensemble
 CFLAGS := -g -Wall -Wextra
 
+SRC := $(wildcard *.c)
+OBJ := $(SRC:.c=)
 
-OBJ_SRC = $(addsuffix .c,$(OBJ))
-
-$(OBJ): $(OBJ_SRC)
+$(OBJ): $(SRC)
 	$(CC) $(CFLAGS) $< -o $@
 
 clean:
@@ -13,5 +12,9 @@ clean:
 	rm -rf *.data *.data.old
 
 run: $(OBJ)
-	sudo perf record -- $(OBJ)
-	sudo perf evlist
+	sudo perf sched record -- chrt --fifo 99 ./$(OBJ)
+	sudo perf script report tasks-analyzer --summary
+
+all: $(OBJ)
+
+.PHONY: all clean run
