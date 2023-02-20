@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 
 import os
+import sys
 import pathlib
 import elftools
 import subprocess
 import rich
+import time
 
 from types import SimpleNamespace
 from collections import defaultdict
@@ -12,8 +14,100 @@ from collections import OrderedDict
 from elftools.elf.elffile import ELFFile
 from elftools.elf.descriptions import describe_reloc_type
 
+
+class PerfProber(object):
+    def __init__(self):
+        pass
+
+    def perf_check_main_probeability(self):
+        logfd = open("exec.log", "a")
+        command = f"sudo perf probe --funcs -x {self.filename}"
+        try:
+            out = subprocess.check_output(
+                command.split(), universal_newlines=True, stderr=logfd
+            )
+        except subprocess.CalledProcessError:
+            self.is_main_probeable = False
+            logfd.close()
+            return
+        if "main" in out.splitlines():
+            self.is_main_probeable = True
+            logfd.close()
+            return
+        self.is_main_probeable = False
+        logfd.close()
+
+    def perf_print_main_status(self):
+        if not self.is_main_probeable:
+            print(f"  Function main not probeable")
+        else:
+            rich.print(f"[cyan]  function main probeable[/cyan]")
+
+    def _perf_probe_main_register(self):
+        logfd = open("exec.log", "a")
+        command = f"sudo perf probe -x {self.filename} --force --add main"
+        try:
+            process = subprocess.Popen(
+                command, shell=True, universal_newlines=True, stderr=logfd, stdout=logfd
+            )
+        except subprocess.CalledProcessError:
+            pass
+        process.wait()
+        logfd.close()
+
+    def _perf_probe_main_do(self):
+        logfd = open("exec.log", "a")
+        eventname = f"probe_{self.filename.name}:main"
+        command = f"sudo taskset -c 3 perf record -C 3 -e  syscalls:sys_exit_execve,{eventname} -a -- nice -n -20 {self.filename} --help"
+        try:
+            process = subprocess.Popen(
+                command, shell=True, universal_newlines=True, stderr=logfd, stdout=logfd
+            )
+        except subprocess.CalledProcessError:
+            pass
+
+        time.sleep(1)
+        process.kill()
+        logfd.close()
+        time.sleep(0.2)
+
+    def _perf_probe_main_pre_deregister(self):
+        logfd = open("exec.log", "a")
+        eventname = f"probe_{self.filename.name}:main"
+        command = f"sudo perf probe --del {eventname}"
+        try:
+            process = subprocess.Popen(
+                command, shell=True, universal_newlines=True, stderr=logfd, stdout=logfd
+            )
+        except subprocess.CalledProcessError:
+            pass
+        process.wait()
+        logfd.close()
+
+    def _perf_probe_main_deregister(self):
+        logfd = open("exec.log", "a")
+        eventname = f"probe_{self.filename.name}:main"
+        command = f"sudo perf probe --del {eventname}"
+        try:
+            process = subprocess.Popen(
+                command, shell=True, universal_newlines=True, stderr=logfd, stdout=logfd
+            )
+        except subprocess.CalledProcessError:
+            pass
+        process.wait()
+        logfd.close()
+
+    def perf_measure_exec_till_main(self):
+        if not self.is_main_probeable:
+            return
+        self._perf_probe_main_pre_deregister()
+        self._perf_probe_main_register()
+        self._perf_probe_main_do()
+        self._perf_probe_main_deregister()
+
+
 # and libraries
-class Executable(object):
+class Executable(PerfProber):
     def __init__(self, filename):
         self.filename = filename
         self.is_elf = None
@@ -25,11 +119,11 @@ class Executable(object):
         self.stat.has_dwarf = False
         self._reloc_functions = []
 
-    def _print_libraries_graph(self, nesting=4):
+    def _print_libraries_graph(self, indent=4):
         for name, lib in self.libraries.items():
-            pre_space = nesting * " "
+            pre_space = indent * " "
             print(f"{pre_space}{lib.filename} [filesize: {self.stat.file_size} byte]")
-            lib._print_libraries_graph(nesting + 4)
+            lib._print_libraries_graph(indent + 4)
 
     def _get_all_libs_recursive(self):
         libs_flat = set()
@@ -63,17 +157,14 @@ class Executable(object):
         if mode == "number":
             self._print_reloc_functions_no()
 
-
     def print_intro(self):
+        print(f"{self.filename}")
+
+    def print_elf_status(self):
         if not self.is_elf:
-            rich.print(f"[brown]{self.filename} - not ELF file :thumbs_down:[/brown]")
-            return
-        if not self.is_main_probeable:
-            rich.print(
-                f"[yellow]{self.filename} - function main not probeable[/yellow]"
-            )
-            return
-        rich.print(f"[green]{self.filename} - function main probeable[/green]")
+            print(f"  Not an ELF file")
+        else:
+            print(f"  Valid ELF file")
 
     def calc_stats(self):
         self.stat.file_size = 0
@@ -92,15 +183,15 @@ class Executable(object):
             for section in elf.iter_sections():
                 if not isinstance(section, elftools.elf.relocation.RelocationSection):
                     continue
-                if section.name != '.rela.plt':
+                if section.name != ".rela.plt":
                     continue
-                symbol_table = elf.get_section(section['sh_link'])
+                symbol_table = elf.get_section(section["sh_link"])
                 if isinstance(symbol_table, elftools.elf.sections.NullSection):
                     continue
                 for relocation in section.iter_relocations():
-                    symbol = symbol_table.get_symbol(relocation['r_info_sym'])
-                    _type = describe_reloc_type(relocation['r_info_type'], elf)
-                    if _type == 'R_X86_64_JUMP_SLOT':
+                    symbol = symbol_table.get_symbol(relocation["r_info_sym"])
+                    _type = describe_reloc_type(relocation["r_info_type"], elf)
+                    if _type == "R_X86_64_JUMP_SLOT":
                         self._reloc_functions.append(symbol.name)
 
     def reloc_functions(self):
@@ -108,6 +199,8 @@ class Executable(object):
 
 
 def get_paths():
+    # FIXME
+    return [pathlib.Path("/usr/local/bin")]
     path_raw = os.getenv("PATH").split(":")
     return [pathlib.Path(i) for i in path_raw]
 
@@ -122,8 +215,6 @@ def path_objects():
     return all_objects
 
 
-
-
 def find_local_functions(filename):
     """coutnerpart[TM] to find_reloc_functions()"""
 
@@ -133,7 +224,8 @@ def find_library(name, rpath):
         paths = [rpath]
     else:
         paths = []
-    paths.extend([
+    paths.extend(
+        [
             pathlib.Path("/lib/x86_64-linux-gnu"),
             pathlib.Path("/lib"),
             pathlib.Path("/usr/lib/x86_64-linux-gnu/"),
@@ -141,29 +233,17 @@ def find_library(name, rpath):
             pathlib.Path("/lib64"),
             pathlib.Path("/usr/lib64"),
             pathlib.Path("/usr/local/lib/"),
+            pathlib.Path("/usr/lib/x86_64-linux-gnu/systemd/"),
             pathlib.Path("/usr/lib/jvm/java-11-openjdk-amd64/lib/jli/"),
             pathlib.Path("/usr/lib/x86_64-linux-gnu/darktable/"),
-            pathlib.Path("/usr/lib/x86_64-linux-gnu/systemd/")])
+            pathlib.Path("/usr/lib/x86_64-linux-gnu/samba/"),
+        ]
+    )
     for path in paths:
         full_path = path / name
         if full_path.is_file():
             return full_path
     return None
-
-
-def main_probeable(executable):
-    filename = executable.filename
-    command = f"perf probe --funcs -x {filename}"
-    try:
-        out = subprocess.check_output(
-            command.split(), universal_newlines=True, stderr=subprocess.DEVNULL
-        )
-    except subprocess.CalledProcessError:
-        return False
-    if "main" in out.splitlines():
-        return True
-    else:
-        return False
 
 
 def populate_libraries(executable):
@@ -191,7 +271,12 @@ def populate_libraries(executable):
     fd.close()
 
 
+def reset_log_files():
+    pathlib.Path("exec.log").unlink(missing_ok=True)
+
+
 def main():
+    reset_log_files()
     stats = defaultdict(int)
     db = OrderedDict()
 
@@ -224,15 +309,18 @@ def main():
     rich.print("[yellow]ELF-Exec files:     {}[/yellow]".format(stats["exec"]))
 
     for filename, executable in db.items():
+        executable.print_intro()
+        executable.print_elf_status()
         if not executable.is_elf:
             continue
-        if main_probeable(executable):
-            executable.is_main_probeable = True
-        populate_libraries(executable)
+        executable.perf_check_main_probeability()
+        executable.perf_print_main_status()
 
+        populate_libraries(executable)
         executable.reloc_functions_populate()
-        executable.print_intro()
         executable.calc_stats()
+        executable.perf_measure_exec_till_main()
+
         executable.print_libraries(mode="number")
         executable.print_reloc_function(mode="number")
 

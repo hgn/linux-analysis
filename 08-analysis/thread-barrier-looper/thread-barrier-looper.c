@@ -12,7 +12,7 @@ void *thread_start(void *args)
 
 	fprintf(stderr, "Thread - PID: %u, TID: %u\n", getpid(), gettid()); 
 	while (1)
-		;
+		sched_yield();
 }
 
 int main(void)
@@ -24,5 +24,5 @@ int main(void)
 	pthread_create(&pthread_id, NULL, &thread_start, NULL);
 
 	while (1)
-		;
+		sched_yield();
 }
