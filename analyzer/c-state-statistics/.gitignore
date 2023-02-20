@@ -1,0 +1,9 @@
+rapl-read/rapl-plot
+rapl-read/rapl-plot.o
+greedy-hothead
+*.json
+*.csv
+*.pdf
+*.swp
+perf.data
+perf.data.old
