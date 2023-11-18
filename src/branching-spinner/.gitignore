@@ -1,2 +1,6 @@
 branching-spinner
 branching-spinner.s
+perf*.data
+perf*.data.old
+
+
