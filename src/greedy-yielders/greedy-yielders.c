@@ -47,7 +47,7 @@ static void yielder(void)
 		sched_yield();
 		diff = xtime() - before;
 		if (diff > EXIT_THRESHOLD) {
-			char name[16 + 1];
+			char name[16];
 			pthread_getname_np(pthread_self(), name, sizeof(name));
 			printf("Threshold of %lf exceeded: %lf at loop iteration %u for thread \"%s\"\n",
 				EXIT_THRESHOLD, diff, i, name);
