@@ -4,7 +4,7 @@ LIBS = -lpthread -lm
 TARGET = greedy-yielders
 SRC = $(addsuffix .c, $(TARGET))
 
-RT_SETUP = taskset -c 1 chrt --rr 23
+RT_SETUP = taskset -c 1 chrt --fifo 23
 
 $(TARGET): $(SRC)
 	$(CC) $(CFLAGS) $< -o $@ $(LIBS)
