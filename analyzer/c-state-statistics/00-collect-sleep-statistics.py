@@ -5,6 +5,7 @@ import sys
 import json
 import glob
 import re
+import pprint
 
 
 def read_file(path):
