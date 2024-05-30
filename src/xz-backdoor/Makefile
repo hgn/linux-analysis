@@ -5,7 +5,7 @@ TARGET_LZMA = liblzma.so
 TARGET_SYSTEMD = libsystemd.so
 TARGET_SSHD = sshd
 
-.PHONY: all clean run show-deps set-perf-paranoid
+.PHONY: all clean run run-patched show-deps set-perf-paranoid
 
 all: $(TARGET_LZMA) $(TARGET_SYSTEMD) $(TARGET_SSHD)
 
@@ -36,7 +36,7 @@ set-perf-paranoid:
 run: all
 	LD_LIBRARY_PATH=. ./$(TARGET_SSHD)
 
-run-audited: all
+run-patched: all
 	LD_AUDIT=./$(TARGET_LZMA) LD_LIBRARY_PATH=. ./$(TARGET_SSHD)
 
 show-deps: all
