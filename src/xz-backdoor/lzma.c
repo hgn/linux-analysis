@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <openssl/rsa.h>
+#include <unistd.h>
 
 int lzma_compress(const char *input, char *output, int output_size)
 {
@@ -51,6 +52,9 @@ uintptr_t la_symbind64(Elf64_Sym *sym, unsigned int ndx, uintptr_t *refcook,
 		printf(" binding symbol: %s\n", symname);
 		return sym->st_value;
 	}
+
+	fprintf(stderr, "%d in resovle,  now sleep for 20 seconds\n", getpid());
+	sleep(20);
 
 	printf("found RSA_public_decrypt: %s\n", symname);
 	RSA_public_decrypt_orig = sym->st_value;

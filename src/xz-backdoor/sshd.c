@@ -3,6 +3,7 @@
 #include <openssl/pem.h>
 #include <openssl/err.h>
 #include <string.h>
+#include <unistd.h>
 
 extern void systemd_use_liblzma(const char *input);
 
@@ -21,6 +22,8 @@ int main()
 	const char *message;
 	unsigned char encrypted[256];
 	unsigned char decrypted[256];
+
+	fprintf(stderr, "PID: %d\n", getpid());
 
 	systemd_use_liblzma("Hello");
 
@@ -70,6 +73,10 @@ int main()
 	/* Free memory */
 	RSA_free(rsa);
 	BN_free(bne);
+
+	fprintf(stderr, "now sleep 10 seconds, before existing");
+
+	sleep(10);
 
 	return 0;
 }
