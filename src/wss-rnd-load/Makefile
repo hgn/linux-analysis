@@ -1,5 +1,5 @@
 OBJ = wss-rnd-load
-CFLAGS  = -g -fno-omit-frame-pointer -O2 -Wall -Wextra
+CFLAGS  = -g -fno-omit-frame-pointer -O0 -Wall -Wextra
 
 OBJ_C = $(addsuffix .c,$(OBJ))
 OBJ_S = $(addsuffix .s,$(OBJ))

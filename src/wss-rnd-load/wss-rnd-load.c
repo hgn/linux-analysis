@@ -49,6 +49,9 @@ int main(int argc, char *argv[])
 		return EXIT_FAILURE;
 	}
 
+	printf("Memory size: %zu\n", n);
+	printf("Memory area: %p - %p\n", memory, (void *)((uintptr_t)memory + n));
+
 	if (mlockall(MCL_CURRENT | MCL_FUTURE) != 0) {
 		perror("Failed to lock memory");
 		free(memory);
