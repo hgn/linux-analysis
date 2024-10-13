@@ -26,7 +26,7 @@ int main(void)
 		new_brk = (char*)current_brk + page_size;
 		brk(new_brk);
 		/* commend out to trigger on-demand memory allocation via page faults */
-		//*(char*)current_brk = 0;
+		*(char*)current_brk = 0;
 		current_brk = new_brk;
 	}
 
