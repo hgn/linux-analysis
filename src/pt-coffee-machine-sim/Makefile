@@ -16,10 +16,10 @@ pt-record: $(TARGET)
 	sudo perf record -e intel_pt/cyc,cyc_thresh=5/u ./$(TARGET)
 
 pt-record-filtered-main: $(TARGET)
-	perf record -e intel_pt/cyc,cyc_thresh=5/u --filter 'filter main @ coffee-machine-sim' ./$(TARGET)
+	sudo perf record -e intel_pt/cyc,cyc_thresh=5/u --filter 'filter main @ coffee-machine-sim' ./$(TARGET)
 
 pt-record-started-main: $(TARGET)
-	perf record -e intel_pt/cyc,cyc_thresh=5/u --filter 'start main @ coffee-machine-sim' ./$(TARGET)
+	sudo perf record -e intel_pt/cyc,cyc_thresh=5/u --filter 'start main @ coffee-machine-sim' ./$(TARGET)
 	# or if there a no symbols (no debug information), both possible
 	# 1) objdump -d ./coffee-machine-sim | grep "<main>"
 	# 2) r2 -AA -q -c "afl" coffee-machine-sim
@@ -29,7 +29,12 @@ pt-report:
 	sudo perf script --dump-raw-trace           > report-dump-raw.txt
 	sudo perf script --itrace=i0ns --ns -F insn > report-only-ins.txt
 	sudo perf script --insn-trace=disasm        > report-disasm.txt
+	# note, requires sampling not limited to userspace
+	sudo perf script -C --itrace=p | grep cbr - > report-power-events.txt
 	sudo perf script --itrace=iybxwpe -F+flags
+	sudo perf report -s srcline
+	sudo perf report pt_ls --itrace=i1usge
+	ls -l report-*
 
 clean:
 	rm -f $(TARGET)
