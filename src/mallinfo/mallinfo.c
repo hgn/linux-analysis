@@ -8,6 +8,7 @@
 void* log_mallinfo(void* arg)
 {
 	struct mallinfo2 mi;
+	pthread_setname_np(pthread_self(), "mallinfo");
 	while (1) {
 		mi = mallinfo2();
 		fprintf(stderr, "Mallinfo2:\n");

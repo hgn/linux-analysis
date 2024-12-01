@@ -1,0 +1,13 @@
+*.so
+*.a
+*.o
+*.swp
+*.swo
+*.tmp
+*~
+*.bak
+tags
+TAGS
+cscope.*
+
+perf*data
