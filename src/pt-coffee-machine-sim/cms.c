@@ -9,7 +9,7 @@ void servecoffee(int coffeetype, int amount);
 
 int main(void)
 {
-	coffeemastercontroller(1, 2);
+	coffeemastercontroller(1, 4);
 	return 0;
 }
 
@@ -61,7 +61,33 @@ int grindbeans(int intensity)
 
 void preheatwater(int temperature)
 {
-	printf("Preheating water to %d C\n", temperature);
+	char *target;
+	int adjustment_attempts = 0;
+
+	while (adjustment_attempts < 3) {
+		if (temperature < 91) {
+			target = "too cold";
+			printf("Temperature %d C is %s. Increasing temperature...\n", temperature, target);
+			temperature += 2;  // Simulate heating adjustment
+		} else if (temperature > 95) {
+			target = "too hot";
+			printf("Temperature %d C is %s. Decreasing temperature...\n", temperature, target);
+			temperature -= 2;  // Simulate cooling adjustment
+		} else {
+			target = "ideal";
+			printf("Temperature reached: %d C (%s)\n", temperature, target);
+			break;  // Exit loop if ideal temperature is reached
+		}
+		adjustment_attempts++;
+	}
+
+	if (adjustment_attempts == 3 && (temperature < 91 || temperature > 95)) {
+		printf("Warning: Unable to reach ideal temperature after 3 attempts. Final temperature: %d C\n", temperature);
+	} else if (adjustment_attempts > 0) {
+		printf("Temperature successfully adjusted to %d C after %d attempt(s).\n", temperature, adjustment_attempts);
+	} else {
+		printf("Temperature already ideal at %d C.\n", temperature);
+	}
 }
 
 void frothmilk(void)
