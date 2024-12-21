@@ -6,7 +6,7 @@ import subprocess
 import sys
 
 TARGET_SIZE = 5_000_000_000
-TARGET_SIZE = 5_000_000_0
+TARGET_SIZE = 5_000_000_00
 CHUNK_SIZE = 1
 
 EVENTS = [
@@ -146,7 +146,7 @@ def main():
 
     print("Start cold read run ...")
     start_cold = time.time()
-    cold_bytes = read_files(selected_files, perf_record=True, perf_output="perf-cold.data", break_after_first_chunk=True)
+    cold_bytes = read_files(selected_files, perf_record=False, perf_output="perf-cold.data", break_after_first_chunk=True)
     end_cold = time.time()
     cold_duration = end_cold - start_cold
 
@@ -155,7 +155,7 @@ def main():
 
     print("Start warm read run ...")
     start_warm = time.time()
-    warm_bytes = read_files(selected_files, perf_record=True, perf_output="perf-warm.data", break_after_first_chunk=True)
+    warm_bytes = read_files(selected_files, perf_record=False, perf_output="perf-warm.data", break_after_first_chunk=True)
     end_warm = time.time()
     warm_duration = end_warm - start_warm
 
